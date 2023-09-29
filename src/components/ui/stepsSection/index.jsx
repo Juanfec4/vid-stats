@@ -10,7 +10,7 @@ const StepsSection = () => {
       <div className="Steps__list">
         <div className="Steps__item">
           <h3 className="Steps__title">
-            Step 1: <span className="Steps__accent">enter a url</span>
+            Step 1: <span className="Steps__accent">Enter a url</span>
           </h3>
           <p className="Steps__text">
             Enter a valid YouTube video URL, it must be shorter than 3 minutes.
