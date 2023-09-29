@@ -1,8 +1,35 @@
-# React + Vite
+<h1 align="center">Welcome to VidStats 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/Juanfec4/vid-stats-api" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Transcribe YouTube videos and get word analyses in no time.
 
-Currently, two official plugins are available:
+### 🏠 [Homepage](https://vid-stats.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Install
+
+```sh
+npm install
+```
+
+## Usage
+
+```sh
+npm build
+```
+
+## Author
+
+👤 **Juan F. Cardenas**
+
+- Website: https://portfolio-site-juanfec4.vercel.app/
+- Github: [@Juanfec4](https://github.com/Juanfec4)
+- LinkedIn: [@juan-f-cardenas](https://linkedin.com/in/juan-f-cardenas)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
