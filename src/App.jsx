@@ -1,6 +1,7 @@
 import ResultCard from "./components/ui/resultCard";
 import SearchCard from "./components/ui/searchCard";
 import Hero from "./components/ui/hero";
+import StepsSection from "./components/ui/stepsSection";
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Hero />
       <SearchCard />
       <ResultCard />
+      <StepsSection />
     </>
   );
 };
