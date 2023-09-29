@@ -5,8 +5,8 @@
   justify-content: center;
   display: flex;
 
-  &__step-item {
-    margin-bottom: $margin-lg 0;
+  &__item {
+    margin: $margin-md 0;
   }
   &__title {
     color: $color-azure-blue;
@@ -20,5 +20,9 @@
     border-radius: $radius-xs;
     max-width: 700px;
     width: 100%;
+  }
+  &__text {
+    margin-bottom: $margin-lg;
+    max-width: 70ch;
   }
 }
