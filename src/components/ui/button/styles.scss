@@ -1,0 +1,37 @@
+@use '../../../styles/global.scss' as *;
+
+$height: 3rem;
+$font-weight: 800;
+$transition-duration: 200ms;
+
+.Button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    gap: $margin-xs;
+    padding: $padding-xs $padding-md;
+    outline: transparent;
+    color: $color-white;
+    border-radius: $radius-sm;
+    height: $height;
+    cursor: pointer;
+    &--primary{
+        @extend .Button;
+        background-color: $color-azure-blue;
+        &:hover{
+            background-color: $color-azure-dark-blue;
+            transition: all ease-in $transition-duration;
+        }
+    }
+    &--accent{
+        @extend .Button;
+    }
+
+    &__icon{
+        filter: invert(100%);
+    }
+    &__text{
+        font-weight: $font-weight;
+    }
+}

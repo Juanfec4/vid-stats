@@ -1,0 +1,90 @@
+//Import Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+// Paddings
+$padding-xs: 0.5rem;
+$padding-sm: 1rem;
+$padding-md: 1.5rem;
+$padding-lg: 2rem;
+$padding-xl: 2.5rem;
+
+//Margins
+$margin-xs: 0.5rem;
+$margin-sm: 1rem;
+$margin-md: 1.5rem;
+$margin-lg: 2rem;
+$margin-xl: 2.5rem;
+
+//Radii
+$radius-xs: 0.25rem;
+$radius-sm: 0.5rem;
+$radius-md: 0.75rem;
+$radius-lg: 1rem;
+$radius-xl: 50%; //FULL (circle)
+
+//Fonts
+$font-reg: 'Ubuntu', sans-serif;
+
+// Colors
+$color-azure-blue: #1492E7;
+$color-azure-dark-blue: #1176BA;
+$color-moonstone-blue: #7FA7D6;
+$color-light-cornflower-blue: #91CBEC;
+$color-pastel-gray: #CECDC0;
+$color-white: #FAF7F8;
+$color-black: #020F17;
+$color-gray-white: #f9f9f9;
+
+//Borders
+$border-xs: 0.06rem;
+$border-sm: 0.13rem;
+$border-md: 0.3rem;
+$border-lg: 0.6rem;
+
+//Default styling
+$max-page-width: 900px;
+
+//Responsive design
+$breakpoints: (
+  "mobile": 0px,
+  "tablet": 768px,
+  "desktop": 1400px,
+);
+
+//Mobile Breakpoint
+@mixin sm {
+  @media (min-width: map-get($breakpoints,"mobile")) {
+    @content;
+  }
+}
+
+//Tablet Breakpoint
+@mixin md {
+  @media (min-width: map-get($breakpoints,"tablet")) {
+    @content;
+  }
+}
+//Desktop Breakpoint
+@mixin lg {
+  @media (min-width: map-get($breakpoints,"desktop")) {
+    @content;
+  }
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $font-reg;
+}
+
+html{
+    background-color: rgba($color-azure-blue,0.05);
+}
+
+body{
+    margin: 0 auto;
+    max-width: $max-page-width;
+    padding: $padding-md;
+}

@@ -1,0 +1,49 @@
+@use '../../../styles/global.scss' as *;
+
+$text-size: 0.9rem;
+$text-size-tag: 0.9rem;
+.Frequency-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: $margin-sm;
+    margin: $margin-sm 0;
+    &__table {
+      border-collapse: collapse;
+      background-color: $color-gray-white;
+      border-radius: $radius-sm;
+      overflow: hidden;
+    }
+  
+    &__header-cell {
+      background-color: $color-gray-white;
+      padding: $padding-sm;
+      text-align: center;
+      border-bottom: solid $color-black $border-sm;
+      font-size: 0.75rem;
+        @include md{
+          font-size: $text-size;
+        }
+    }
+  
+    &__row {
+    background-color:transparent;
+    }
+  
+    &__cell {
+      padding: $padding-sm;
+      border-bottom: $border-xs solid $color-pastel-gray;
+      font-size: $text-size;
+    }
+
+    &__tag {
+        display: inline-block;
+        background-color: rgba($color-azure-blue, 0.75);
+        color: $color-white;
+        padding:  calc($padding-xs/2) $padding-xs;
+        margin: calc($margin-xs/4);
+        border-radius: $radius-sm;
+        font-size: $text-size-tag;
+      }
+  }

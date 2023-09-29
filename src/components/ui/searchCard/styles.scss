@@ -1,0 +1,39 @@
+@use '../../../styles/global.scss' as *;
+
+
+$width: 100%;
+$text-size: 0.9rem;
+.Search-card{
+    max-width: $width;
+    margin: $margin-sm auto;
+    border: solid $border-xs $color-black;
+    border-radius: $radius-xs;
+    padding: $padding-md;
+    background-color: $color-white;
+    &__title{
+        margin-bottom: $margin-sm;
+        border-left: solid $border-md $color-azure-blue;
+        padding-left: $padding-xs;
+    }
+
+    &__description{
+        padding-bottom: $padding-xs;
+        margin-bottom: $margin-md;
+        font-size: $text-size;
+        font-style: italic;
+        border-bottom: solid $border-xs $color-pastel-gray;
+
+    }
+    &__input-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @include md{
+            flex-direction: row;
+            align-items: end; 
+        }
+
+    gap: $margin-xs;
+    }
+}

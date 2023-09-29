@@ -1,0 +1,52 @@
+@use '../../../styles/global.scss' as *;
+
+
+$height: 200px;
+$width: 300px;
+.Stats-dashboard {
+    background-color: $color-gray-white;
+    border: $border-xs solid $color-pastel-gray;
+    border-radius: $radius-sm;
+    padding: $padding-sm;
+    width: $width;
+    height: $height;
+  
+    &__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    &__item {
+      padding: $padding-xs 0;
+      border-bottom: $border-xs solid $color-pastel-gray;
+      list-style: none;
+      
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  
+    &__text {
+      font-size: 0.9rem;
+      margin: 0;
+      color: $color-black;
+  
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    }
+  
+    &__icon {
+      float: left;
+      margin-right: $margin-xs;
+    }
+  
+    &__value {
+      float: right;
+      font-weight: 700;
+      color: $color-azure-dark-blue;
+    }
+  }

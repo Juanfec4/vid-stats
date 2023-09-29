@@ -1,0 +1,30 @@
+@use '../../../styles/global.scss' as *;
+
+.Hero{
+    text-align: center;
+    &__site-title{
+        color: $color-azure-blue;
+        font-weight: 900;
+        font-size: 4rem;
+    }
+    &__steps-section{
+        margin: $margin-lg 0;
+    }
+
+    &__step{
+        margin-bottom: $margin-lg 0;
+    }
+    &__step-title{
+        color: $color-azure-blue;
+    }
+    &__step-accent{
+        color: $color-black;
+        font-style: italic;
+    }
+    &__image{
+        border: solid $border-xs $color-black;
+        border-radius: $radius-xs;
+        max-width: 700px;
+        width: 100%;
+    }
+}

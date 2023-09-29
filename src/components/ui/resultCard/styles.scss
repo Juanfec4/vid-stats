@@ -1,0 +1,88 @@
+@use '../../../styles/global.scss' as *;
+
+
+$width: 100%;
+$thumbnail-width: 300px;
+$thumbnail-height: 200px;
+$text-size: 0.9rem;
+$sub-title-size: 0.8rem;
+.Result-card{
+    max-width: $width;
+    margin: $margin-sm auto;
+    border: solid $border-xs $color-black;
+    border-radius: $radius-xs;
+    padding: $padding-md;
+    background-color: $color-white;
+    &__title{
+        margin-bottom: $margin-sm;
+        border-left: solid $border-md $color-azure-blue;
+        padding-left: $padding-xs;
+    }
+
+    &__description{
+        padding-bottom: $padding-xs;
+        margin-bottom: $margin-md;
+        font-size: $text-size;
+        font-style: italic;
+        border-bottom: solid $border-xs $color-pastel-gray;
+
+    }
+    &__text{
+        font-size: $text-size;
+        overflow-wrap: break-word;
+    }
+    &__info-section{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin: $margin-md 0;
+    }
+    &__video-metadata{
+        display: flex;
+        flex-direction: column;
+        gap: $margin-xs;
+        padding-bottom: $padding-sm;
+        border-bottom: solid $border-xs $color-pastel-gray;
+    }
+    &__thumbnail{
+        width: $thumbnail-width;
+        @include md{
+            height: $thumbnail-height;
+            width: auto;
+        }
+        border-radius: $radius-sm;  
+    }
+    &__video-subtitle{
+        color: $color-moonstone-blue;
+        font-size: $sub-title-size;
+        font-style: italic;
+    }
+
+    &__section-title{
+        margin-bottom: $margin-xs;
+        border-left: solid $color-light-cornflower-blue;
+        padding-left: $padding-xs;
+    }
+    &__output-box{
+        background-color: rgba($color-azure-dark-blue,0.05);
+        color: $color-black;
+        padding: $padding-lg;
+        border-radius: $radius-sm;
+        max-width: 100%;
+    }
+    &__video-metadata{
+        width: 100%;
+    }
+
+    &__quick-report{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $margin-sm;
+        @include md{
+            flex-direction: row;
+            align-items: end;
+            justify-content: space-between;
+        }
+    }
+}
